@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:layout_margin="10dp"
+        android:id="@+id/myframe"
+        >
+
+
+
+    </FrameLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DO IT"
+        android:onClick="myButton"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical|bottom"
+        />
+
+
+
+
+
+</FrameLayout>

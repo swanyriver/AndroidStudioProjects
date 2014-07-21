@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MasterFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelloMaterializeActivity"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+
+    >
+    <FrameLayout
+        android:id="@+id/myFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3"
+        >
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/dorisheadsmall"
+            />
+
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@android:color/background_dark"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/myFirstTryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Materialize Doris"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Duration:"
+                    android:gravity="right"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/myDurationReadout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="#"/>
+
+            </LinearLayout>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/durationSeek"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Divisions:"
+                    android:gravity="right"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/myDivisionReadout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="#"/>
+
+            </LinearLayout>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/divisionSeek"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            >
+
+
+            <ToggleButton
+                android:id="@+id/gridToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Grid"
+                android:textOn="Grid"
+                android:checked="false"
+                android:onClick="GridToggleClicked"/>
+            <ToggleButton
+                android:id="@+id/AlphaToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Alpha"
+                android:textOn="Alpha"
+                android:checked="false"
+                android:onClick="AlphaToggleClicked"/>
+            <ToggleButton
+                android:id="@+id/drawToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Draw"
+                android:textOn="Draw"
+                android:checked="false"
+                android:onClick="drawToggleClicked"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

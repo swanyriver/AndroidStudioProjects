@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityTextnCircle"
+    tools:ignore="MergeRootFrame"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Doris"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:id="@+id/text1"
+        android:padding="45dp"
+
+        android:background="@android:color/holo_red_dark"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myProgress"
+            android:layout_margin="15dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:text="DO IT"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="15dp"
+            android:onClick="Button"
+            />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

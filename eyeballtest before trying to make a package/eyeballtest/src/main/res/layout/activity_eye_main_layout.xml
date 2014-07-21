@@ -1,0 +1,173 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eyeMainActivity"
+    android:background="@android:color/white"
+    tools:ignore="MergeRootFrame"
+
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/blueface"
+        android:id="@+id/face"
+        />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/controlFrame">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="camera"
+            android:onClick="cameraButton"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:enabled="false"
+            android:onClick="addEyeButton"
+            android:layout_gravity="bottom|center"
+
+            android:id="@+id/myButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="wiggle"
+            android:onClick="wiggleButton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="watcht me"
+            android:layout_gravity="top|left"
+            android:onClick="watchButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="draw:0"
+            android:layout_gravity="bottom|left"
+            android:onClick="drawableButton"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/displayeye"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new set"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="50dp"
+            android:onClick="newSetButton"
+            android:enabled="false"
+            android:id="@+id/setButton"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brainControlPane"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testEyes"
+                android:onClick="makeDummyEyeset"
+                android:layout_gravity="center_vertical"
+                android:textSize="10dp"
+                />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BrainOn"
+                android:textOn="BrainOn"
+                android:textOff="BrainOff"
+                android:textSize="10dp"
+                android:id="@+id/brainon"
+
+                android:onClick="brainOn"/>
+
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="brain1"
+                    android:onClick="brainOne"
+                    android:id="@+id/brainone"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="brain2"
+                    android:onClick="brainTwo"
+                    android:id="@+id/braintwo"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="prox"
+                    android:textSize="10dp"
+
+                    android:checked="true"
+                    android:id="@+id/brainprox"
+                    android:textColor="@android:color/black"
+                    android:onClick="proxButton"
+                    />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visualization"
+        android:layout_gravity="center_horizontal"
+        android:onClick="vizButton"
+        />
+
+
+
+
+</FrameLayout>

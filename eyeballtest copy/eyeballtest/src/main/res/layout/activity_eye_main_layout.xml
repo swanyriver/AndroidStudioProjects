@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eyeMainActivity"
+    android:background="@android:color/white"
+    tools:ignore="MergeRootFrame"
+
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/blueface"
+        android:id="@+id/face"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="camera"
+        android:onClick="cameraButton"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Done Placing Eyes"
+        android:enabled="false"
+        android:onClick="myButton"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:id="@+id/myButton"
+        />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:textOn="together"
+        android:textOff="separate"
+        android:id="@+id/joinedToggle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primary"
+        android:id="@+id/primaryText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="secondfocus"
+        android:id="@+id/secondfocus"/>
+
+
+
+
+</FrameLayout>
